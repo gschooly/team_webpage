@@ -64,20 +64,12 @@
       background-color: #006EB9;
     }
 
-    .page_int {
-      z-index: -1;
-      position: relative;
-      top: 80px;
-      height: 615px;
-      /* border: 1px solid black; */
-    }
-
     .page_title {
       font-family: 'GmarketSansMedium';
       font-size: 25px;
       color: #006EB9;
-      position: relative;
-      top: 20px;
+      /* border:1px solid black; */
+      padding-top:130px;
     }
     .underbar{
       background-color: #006EB9;;
@@ -91,17 +83,98 @@
       font-family: 'GmarketSansBold';
       font-size: 70px;
       color: #006EB9;
-      position: relative;
-      top: 150px;
+      padding-top:105px;
+      padding-bottom:240px;
+      /* border: 1px solid black; */
     }
 
     #project_int {
       display: flex;
       justify-content: center;
       /* border: 1px solid black; */
-      position: relative;
-      top: 250px;
       color:#74B0CF;
       font-family: 'GmarketSansMedium';
       font-size:30px;
+      padding-top:200px;
+      padding-bottom:260px;
+    }
+/* 여기까지 팀소개 페이지 */
+
+.sub_menu{
+  /* border:1px solid black; */
+  position: fixed;
+  top:75px;
+  right:0px;
+  left:0px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  height:35px;
+  color: white;
+  font-family: 'GmarketSansLight';
+  font-size: 15px;
+  background-color:#006EB9;
+}
+
+.sub_menu_contents{
+  /* border:1px solid black; */
+  margin-left: -60px;
+  margin-right: -60px;;
+  padding: 1px;
+  border-radius: 10px;
+}
+.sub_menu_contents a{
+  text-decoration: none;
+      color: inherit;
+}
+.sub_menu_contents:hover {
+      background-color: #74B0CF;
+    }
+
+#project_name{
+  text-align: center;
+  font-family: 'GmarketSansBold';
+  color:#006EB9;
+  font-size: 60px;
+  /* border:1px solid black; */
+  padding-top: 160px;
+  padding-bottom: 310px;
+}
+#definition{
+  /* border:1px solid black; */
+  text-align: center;
+  padding-top:120px;
+  padding-bottom: 200px;
+}
+.contents_name{
+  /* border:1px solid black; */
+  font-family: 'GmarketSansBold';
+  color:#006EB9;
+  font-size: 55px;
+}
+#definition_contents{
+  /* border:1px solid black; */
+  font-family: 'GmarketSansMedium';
+  color:#74B0CF;
+  font-size: 35px;
+  margin-top: 100px;
+}
+
+
+
+    figure {transition: opacity 0.2s; position: relative; margin: 0; max-width: 20%}
+    figure img {width: 100%}
+    figure figcaption {color: #fff;bottom: 70px; opacity: 0;position: absolute; text-align: center; width: 100%;transition: all .3s ease;}
+    figure .picture {opacity: 1;transition: all 0.3s ease 0s;overflow: hidden}
+    figure:hover .picture {background-color: #000}
+    figure:hover img {opacity: 1;transition: all .3s ease;opacity: 0.15;}
+    figure:hover figcaption {opacity: 1;transition: all .3s ease; }
+
+    .member_int{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top:85px;
+      margin-bottom: 150px;
     }
