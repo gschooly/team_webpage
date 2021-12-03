@@ -25,8 +25,9 @@
     }
 
     .header {
+      z-index: 10;
       display: flex;
-      position: fixed;
+      position:fixed;
       width: 100%;
       height: 80px;
       background-color: #74B0CF;
@@ -65,6 +66,7 @@
     }
 
     .page_title {
+      text-align: center;
       font-family: 'GmarketSansMedium';
       font-size: 25px;
       color: #006EB9;
@@ -80,6 +82,7 @@
       /* 여기까지 모든 페이지 공통 적용 */
 
     #project_title {
+      text-align: center;
       font-family: 'GmarketSansBold';
       font-size: 70px;
       color: #006EB9;
@@ -94,7 +97,7 @@
       /* border: 1px solid black; */
       color:#74B0CF;
       font-family: 'GmarketSansMedium';
-      font-size:30px;
+      font-size:33px;
       padding-top:200px;
       padding-bottom:260px;
     }
@@ -102,6 +105,7 @@
 
 .sub_menu{
   /* border:1px solid black; */
+  z-index: 11;
   position: fixed;
   top:75px;
   right:0px;
@@ -132,49 +136,205 @@
       background-color: #74B0CF;
     }
 
-#project_name{
-  text-align: center;
-  font-family: 'GmarketSansBold';
-  color:#006EB9;
-  font-size: 60px;
-  /* border:1px solid black; */
-  padding-top: 160px;
-  padding-bottom: 310px;
-}
-#definition{
-  /* border:1px solid black; */
-  text-align: center;
-  padding-top:120px;
-  padding-bottom: 200px;
-}
 .contents_name{
+  text-align: center;
   /* border:1px solid black; */
   font-family: 'GmarketSansBold';
   color:#006EB9;
   font-size: 55px;
 }
+
+#project_name{
+  text-align: center;
+  font-family: 'GmarketSansBold';
+  color:#006EB9;
+  font-size: 60px;
+  border:1px solid black;
+  padding-top: 160px;
+  padding-bottom: 230px;
+}
+#definition{
+  border:1px solid black;
+  padding-top:110px;
+  padding-bottom: 200px;
+}
+
 #definition_contents{
+  text-align: center;
   /* border:1px solid black; */
   font-family: 'GmarketSansMedium';
   color:#74B0CF;
+  font-size: 40px;
+  margin-top: 130px;
+}
+
+#reason{
+  border:1px solid black;
+  padding-top:110px;
+}
+
+#reason_contents{
+  /* border:1px solid black; */
+  color:#74B0CF;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#reason_cause{
+  /* border:1px solid black; */
+  font-family: 'GmarketSansLight';
+  font-size: 25px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top:70px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 50px;
+}
+
+#reason_result{
+  /* border:1px solid black; */
+  font-family: 'GmarketSansMedium';
   font-size: 35px;
-  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+
+#reality{
+  border:1px solid black;
+  padding-top:110px;
+  padding-bottom:190px;
+}
+
+#reality_contents{
+  margin-top: 60px;
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ .graph_box{
+      width: 280px;
+      height: 280px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px 0px #000;
+    }
+    .graph_img{
+      position: absolute;
+      background: lightblue;
+      z-index:1;
+      -webkit-transition:all .5s ease;
+      transition: all .5s ease;
+      bottom:0px;
+      overflow: hidden;
+     }
+
+     .graph_box:hover .graph_img{
+       bottom: 120px;
+     }
+
+     .graph_text{
+       font-family: 'GmarketSansLight';
+      text-align: center;
+      line-height: 120px;
+      width: 260px;
+      height: 120px;
+      padding:10px;
+      color:#FFFFFF;
+      background: #006EB9;
+      position: absolute;
+      bottom:0px;
+    }
+
+#problem{
+  border:1px solid black;
+  padding-top:60px;
+}
+
+#goal{
+  border:1px solid black;
+  padding-top:60px;
 }
 
 
 
-    figure {transition: opacity 0.2s; position: relative; margin: 0; max-width: 20%}
-    figure img {width: 100%}
-    figure figcaption {color: #fff;bottom: 70px; opacity: 0;position: absolute; text-align: center; width: 100%;transition: all .3s ease;}
-    figure .picture {opacity: 1;transition: all 0.3s ease 0s;overflow: hidden}
-    figure:hover .picture {background-color: #000}
-    figure:hover img {opacity: 1;transition: all .3s ease;opacity: 0.15;}
-    figure:hover figcaption {opacity: 1;transition: all .3s ease; }
+    figure {
+      transition: opacity 0.2s; 
+      position: relative; 
+      margin: 0; 
+      max-width: 20%
+    }
+
+    figure img {
+      width: 240px;
+    }
+
+    figure figcaption {
+      color: #fff;
+      bottom: 70px; 
+      opacity: 0;position: absolute; 
+      text-align: center; 
+      width: 100%;
+      transition: all .3s ease;
+    }
+
+    figure .picture {
+      opacity: 1;
+      transition: all 0.3s ease 0s;
+      overflow: hidden
+    }
+
+    figure:hover .picture {
+      background-color: #000
+    }
+
+    figure:hover img {
+      opacity: 1;
+      transition: all .3s ease;
+      opacity: 0.15;
+    }
+
+    figure:hover figcaption {
+      opacity: 1;
+      transition: all .3s ease; 
+    }
 
     .member_int{
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-top:85px;
+      flex-direction: column;
+      margin-top:50px;
       margin-bottom: 150px;
+      /* border:1px solid black; */
     }
+
+    .member_int_1{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* border:1px solid black; */
+      margin-bottom:10px ;
+    }
+
+    .member_int_2{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* border:1px solid black; */
+    } 
+
+    #pic_1, #pic_3{
+      position: relative;
+      right:10px;
+    }
+
+    #pic_2, #pic_4{
+      position: relative;
+      left:10px;
+    }
+

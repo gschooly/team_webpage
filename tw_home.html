@@ -4,6 +4,8 @@
 <head>
   <title>2021_4M 5%팀 웹페이지</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body style="overflow-x: hidden">
@@ -15,14 +17,19 @@
       <div class='menu_contents'><a href="./tw_member.html">팀원 소개</a></div>
     </div>
   </div>
-  <center>
-    <div class='page_title'>팀 소개</div>
-    <div id='project_title'>당신의 문해력은<br>안녕하십니까</div>
-  </center>
-  <div id='project_int'>
+  <div class='page_title'>팀 소개</div>
+  <div id='project_title' data-aos="zoom-in">당신의 문해력은<br>안녕하십니까</div>
+  <div id='project_int' data-aos="fade-down">
     <div>안녕하세요<br>저희는 '청소년의 문해력이 부족하다'라는 주제를 탐구하고<br> 해결하기 위해 노력하고 있는 5%팀 입니다</div>
   </div>
   <div class='underbar'>
     <div class='email'>이메일 넣을 예정</div>
   </div>
+  <script>
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1500
+    });
+
+  </script>
 </body>
