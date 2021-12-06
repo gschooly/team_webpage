@@ -10,7 +10,7 @@
 
 <body>
   <div class='header'>
-    <div class='logo'><a href="./tw_home.html"><img src="5%%.png" href="./tw_home.html" width="60" /></a></div>
+    <div class='logo'><a href="./tw_home.html"><img src="임시로고.png" href="./tw_home.html" width="60" /></a></div>
     <div class='menu'>
       <div class='menu_contents'><a href="./tw_home.html">팀 소개</a></div>
       <div class='menu_contents'><a href="./tw_project.html">프로젝트 소개</a></div>
@@ -32,7 +32,7 @@
     <div class='page_title'>프로젝트 소개</div>
   </div>
 
-  <div id='project_name'>"청소년의 문해력이 부족하다"</div>
+  <div id='project_name' data-aos="zoom-in-up">"청소년의 문해력이 부족하다"</div>
 
   <div id='definition'>
     <div class='contents_name'>문해력이란?</div>
@@ -55,15 +55,15 @@
     <div id='reality_contents'>
       <div class='graph_box'>
         <div class='graph_img'><img src="와이.png" width=280px /></div>
-        <div class='graph_text'>내용내용내용내용</div>
+        <div class='graph_text'>낮아지는 PISA(읽기 소양 성취 비율) 순위</div>
       </div>
       <div class='graph_box'>
         <div class='graph_img'><img src="와이.png" width=280px /></div>
-        <div class='graph_text'>내용내용내용내용</div>
+        <div class='graph_text'>초등 수준의 문해력인 11%의 중3학생들</div>
       </div>
       <div class='graph_box'>
         <div class='graph_img'><img src="와이.png" width=280px /></div>
-        <div class='graph_text'>내용내용내용내용</div>
+        <div class='graph_text'>MZ세대 국어능력평가, 부족 '56%'</div>
       </div>
     </div>
   </div>
@@ -71,11 +71,15 @@
 
   <div id='problem'>
     <div class='contents_name'>문제 발생 이유</div>
-    <div id='problem_contents'></div>
+    <div id='problem_contents'>
+      <div class='deep' id=paragraph onmouseover=paragraph_onmouseover() onmouseout=paragraph_onmouseout()>깊이읽기가 되지 않기
+        때문이다
+      </div>
+    </div>
   </div>
 
   <div id='goal'>
-    <div class='contents_name'>최종 목표</div>
+    <div class='contents_name_goal'>최종 목표</div>
     <div id='goal_contents'>
       <div id='purpose'>청소년들이 문해력을 이해하고 증진시키는 것</div>
     </div>
@@ -84,6 +88,34 @@
   <div class='underbar'>
     <div class='email'>이메일 넣을 예정</div>
   </div>
+  <script>
+    function paragraph_onmouseover() {
+      paragraph.innerText = '깊이읽기란';
+      paragraph.style.color = 'white';
+      paragraph.style.background = '#CDC4C2';
+      paragraph.style.fontSize = '45px';
+      paragraph.style.opacity = '0.6';
+      paragraph.style.transition = 'all 0.5s';
+      paragraph.style.borderRadius = '50px';
+
+    }
+
+    function paragraph_onmouseout() {
+      paragraph.innerText = "깊이읽기가 되지 않기 때문이다";
+      paragraph.style.color = '#CDC4C2';
+      paragraph.style.background = 'white';
+      paragraph.style.fontSize = '45px'
+      paragraph.style.opacity = '1';
+      paragraph.style.transition = 'all 0.5s';
+      paragraph.style.borderRadius = '50px';
+    }
+
+    AOS.init({
+      easing: 'ease-out-quart',
+      duration: 1500
+    });
+
+  </script>
 
 </body>
 

@@ -30,7 +30,7 @@
       position:fixed;
       width: 100%;
       height: 80px;
-      background-color: #74B0CF;
+      background-color: #F1B33A;
     }
 
     .logo {
@@ -62,22 +62,28 @@
     }
 
     .menu_contents:hover {
-      background-color: #006EB9;
+      background-color: #656565;
     }
 
     .page_title {
       text-align: center;
       font-family: 'GmarketSansMedium';
       font-size: 25px;
-      color: #006EB9;
+      color: #656565;
       /* border:1px solid black; */
       padding-top:130px;
     }
     .underbar{
-      background-color: #006EB9;;
+      background-color: #656565;;
       color: white;
       width: 100%;
       height: 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    .email{
+      margin-left: 100px;
     }
       /* 여기까지 모든 페이지 공통 적용 */
 
@@ -85,7 +91,7 @@
       text-align: center;
       font-family: 'GmarketSansBold';
       font-size: 70px;
-      color: #006EB9;
+      color: #656565;
       padding-top:105px;
       padding-bottom:240px;
       /* border: 1px solid black; */
@@ -95,7 +101,7 @@
       display: flex;
       justify-content: center;
       /* border: 1px solid black; */
-      color:#74B0CF;
+      color:#CDC4C2;
       font-family: 'GmarketSansMedium';
       font-size:33px;
       padding-top:200px;
@@ -118,14 +124,14 @@
   color: white;
   font-family: 'GmarketSansLight';
   font-size: 15px;
-  background-color:#006EB9;
+  background-color:#656565;
 }
 
 .sub_menu_contents{
   /* border:1px solid black; */
   margin-left: -60px;
   margin-right: -60px;;
-  padding: 1px;
+  padding: 3px;
   border-radius: 10px;
 }
 .sub_menu_contents a{
@@ -133,28 +139,37 @@
       color: inherit;
 }
 .sub_menu_contents:hover {
-      background-color: #74B0CF;
+      background-color: #CDC4C2;
     }
 
 .contents_name{
+  padding-top: 30px;
   text-align: center;
   /* border:1px solid black; */
   font-family: 'GmarketSansBold';
-  color:#006EB9;
+  color:#656565;
+  font-size: 55px;
+}
+
+.contents_name_goal{
+  text-align: center;
+  /* border:1px solid black; */
+  font-family: 'GmarketSansBold';
+  color:#656565;
   font-size: 55px;
 }
 
 #project_name{
   text-align: center;
   font-family: 'GmarketSansBold';
-  color:#006EB9;
+  color:#656565;
   font-size: 60px;
-  border:1px solid black;
+  /* border:1px solid black; */
   padding-top: 160px;
   padding-bottom: 230px;
 }
 #definition{
-  border:1px solid black;
+  /* border:1px solid black; */
   padding-top:110px;
   padding-bottom: 200px;
 }
@@ -163,19 +178,19 @@
   text-align: center;
   /* border:1px solid black; */
   font-family: 'GmarketSansMedium';
-  color:#74B0CF;
+  color:#CDC4C2;
   font-size: 40px;
   margin-top: 130px;
 }
 
 #reason{
-  border:1px solid black;
+  /* border:1px solid black; */
   padding-top:110px;
 }
 
 #reason_contents{
   /* border:1px solid black; */
-  color:#74B0CF;
+  color:#CDC4C2;
   text-align: center;
   display:flex;
   flex-direction: column;
@@ -204,7 +219,7 @@
 
 
 #reality{
-  border:1px solid black;
+  /* border:1px solid black; */
   padding-top:110px;
   padding-bottom:190px;
 }
@@ -227,7 +242,7 @@
     }
     .graph_img{
       position: absolute;
-      background: lightblue;
+      background: #CDC4C2;
       z-index:1;
       -webkit-transition:all .5s ease;
       transition: all .5s ease;
@@ -236,32 +251,59 @@
      }
 
      .graph_box:hover .graph_img{
-       bottom: 120px;
+       bottom: 100px;
      }
 
      .graph_text{
        font-family: 'GmarketSansLight';
       text-align: center;
-      line-height: 120px;
+      line-height: 100px;
       width: 260px;
-      height: 120px;
+      height: 100px;
       padding:10px;
       color:#FFFFFF;
-      background: #006EB9;
+      background: #656565;
       position: absolute;
       bottom:0px;
     }
 
 #problem{
-  border:1px solid black;
-  padding-top:60px;
+  /* border:1px solid black; */
+  padding-top:110px;
+  padding-bottom:190px;
+}
+
+#problem_contents{
+  text-align: center;
+  /* border:1px solid black; */
+  font-family: 'GmarketSansMedium';
+  color:#CDC4C2;
+  font-size: 45px;
+  margin-top: 90px;
+  padding:0px;
+}
+
+.deep{
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #goal{
-  border:1px solid black;
-  padding-top:60px;
+  /* border:1px solid black; */
+  padding-top:110px;
+  padding-bottom:190px;
 }
 
+#purpose{
+  text-align: center;
+  /* border:1px solid black; */
+  font-family: 'GmarketSansMedium';
+  color:#CDC4C2;
+  font-size: 40px;
+  margin-top: 130px;
+}
 
 
     figure {
@@ -270,11 +312,9 @@
       margin: 0; 
       max-width: 20%
     }
-
     figure img {
       width: 240px;
     }
-
     figure figcaption {
       color: #fff;
       bottom: 70px; 
@@ -283,23 +323,19 @@
       width: 100%;
       transition: all .3s ease;
     }
-
     figure .picture {
       opacity: 1;
       transition: all 0.3s ease 0s;
       overflow: hidden
     }
-
     figure:hover .picture {
       background-color: #000
     }
-
     figure:hover img {
       opacity: 1;
       transition: all .3s ease;
       opacity: 0.15;
     }
-
     figure:hover figcaption {
       opacity: 1;
       transition: all .3s ease; 
