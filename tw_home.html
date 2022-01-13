@@ -10,26 +10,56 @@
 
 <body style="overflow-x: hidden">
   <div class='header'>
-    <div class='logo'><a href="./tw_home.html"><img src="임시로고.png" href="./tw_home.html" width="60" /></a></div>
-    <div class='menu'>
-      <div class='menu_contents'><a href="./tw_home.html">팀 소개</a></div>
-      <div class='menu_contents'><a href="./tw_project.html">프로젝트 소개</a></div>
-      <div class='menu_contents'><a href="./tw_member.html">팀원 소개</a></div>
+    <div class='menu_contents'><a href="./tw_home.html">팀 소개</a></div>
+    <div class='menu_contents'><a href="./tw_project.html">프로젝트 소개</a></div>
+    <div class='menu_contents'><a href="./tw_member.html">팀원 소개</a></div>
+  </div>
+
+  <div class='scroll'>
+
+    <div class='home_contents'>
+      <div class='page_title'>팀 소개</div>
+      <div id='project_title' data-aos="zoom-in">당신의 문해력은<br>안녕하십니까</div>
     </div>
+
+    <div class='home_contents' id='remove_scroll3'>
+      <div id='project_int'>
+        <div id='ptext'>안녕하세요<br>저희는 <span style='color:#61BEA2'>'깊이읽기 경험에서 문해력 향상까지'</span> 라는 주제를 탐구하고<br> 해결하기 위해
+          노력하고 있는
+          5%팀 입니다</div>
+      </div>
+    </div>
+
+    <div id="arrow"></div>
+    <div id='scrol'>scroll</div>
   </div>
-  <div class='page_title'>팀 소개</div>
-  <div id='project_title' data-aos="zoom-in">당신의 문해력은<br>안녕하십니까</div>
-  <div id='project_int' data-aos="fade-down">
-    <div>안녕하세요<br>저희는 '청소년의 문해력이 부족하다'라는 주제를 탐구하고<br> 해결하기 위해 노력하고 있는 5%팀 입니다</div>
-  </div>
-  <div class='underbar'>
+  <!-- <div class='underbar'>
     <div class='email'>이메일 넣을 예정</div>
-  </div>
+  </div> -->
   <script>
     AOS.init({
       easing: 'ease-out-quart',
       duration: 1200
     });
 
+    var home = document.getElementById('project_int');
+    var text = document.getElementById('ptext');
+
+    home.addEventListener('mouseenter', function () {
+      text.style.opacity = '1'
+    });
+
+    var scrollRemove = document.getElementById('remove_scroll3');
+    var arrow = document.getElementById('arrow');
+    var scroll = document.getElementById('scrol');
+
+    scrollRemove.addEventListener('mouseenter', function () {
+      arrow.style.opacity = '0'
+      scrol.style.opacity = '0'
+    });
+    scrollRemove.addEventListener('mouseleave', function () {
+      arrow.style.opacity = '0.3'
+      scrol.style.opacity = '0.4'
+    });
   </script>
 </body>
